@@ -1,11 +1,11 @@
 /**
- * @transactional/react Base Styles
+ * transactional-react Base Styles
  *
  * Optional CSS file that provides base theme variables.
  * Import this if you want the default theme without calling injectCSSVariables().
  *
  * Usage:
- *   import '@transactional/react/styles.css';
+ *   import 'transactional-react/styles.css';
  */
 
 :root {

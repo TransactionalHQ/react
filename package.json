@@ -46,7 +46,7 @@
     "build": "tsup",
     "build:css": "cp src/styles/base.css dist/styles.css",
     "dev": "tsup --watch",
-    "test": "vitest",
+    "test": "vitest --run",
     "test:run": "vitest --run",
     "test:coverage": "vitest --coverage",
     "lint": "eslint src",

@@ -1,5 +1,5 @@
 /**
- * @transactional/react
+ * transactional-react
  *
  * Official React SDK for Transactional - Auth, Chat, Knowledge Base, and Forms components.
  *
