@@ -1,5 +1,5 @@
 {
-  "name": "@transactional/react",
+  "name": "transactional-react",
   "version": "0.1.0",
   "description": "Official React SDK for Transactional - Auth, Chat, Knowledge Base, and Forms components",
   "main": "./dist/index.js",
