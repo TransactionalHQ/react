@@ -1,0 +1,205 @@
+/**
+ * @transactional/react Base Styles
+ *
+ * Optional CSS file that provides base theme variables.
+ * Import this if you want the default theme without calling injectCSSVariables().
+ *
+ * Usage:
+ *   import '@transactional/react/styles.css';
+ */
+
+:root {
+  /* Colors - Light mode defaults */
+  --txl-background: #ffffff;
+  --txl-foreground: #09090b;
+  --txl-card: #ffffff;
+  --txl-card-foreground: #09090b;
+  --txl-popover: #ffffff;
+  --txl-popover-foreground: #09090b;
+  --txl-primary: #18181b;
+  --txl-primary-foreground: #fafafa;
+  --txl-secondary: #f4f4f5;
+  --txl-secondary-foreground: #18181b;
+  --txl-muted: #f4f4f5;
+  --txl-muted-foreground: #71717a;
+  --txl-accent: #f4f4f5;
+  --txl-accent-foreground: #18181b;
+  --txl-destructive: #ef4444;
+  --txl-destructive-foreground: #fafafa;
+  --txl-border: #e4e4e7;
+  --txl-input: #e4e4e7;
+  --txl-ring: #18181b;
+  --txl-success: #22c55e;
+  --txl-warning: #f59e0b;
+  --txl-info: #3b82f6;
+
+  /* Typography */
+  --txl-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --txl-font-size-xs: 12px;
+  --txl-font-size-sm: 14px;
+  --txl-font-size-md: 16px;
+  --txl-font-size-lg: 18px;
+  --txl-font-size-xl: 20px;
+  --txl-font-size-2xl: 24px;
+  --txl-font-size-3xl: 30px;
+
+  /* Border radius */
+  --txl-radius-sm: 4px;
+  --txl-radius-md: 6px;
+  --txl-radius-lg: 8px;
+  --txl-radius-xl: 12px;
+  --txl-radius-full: 9999px;
+
+  /* Shadows */
+  --txl-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --txl-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --txl-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --txl-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --txl-background: #09090b;
+    --txl-foreground: #fafafa;
+    --txl-card: #09090b;
+    --txl-card-foreground: #fafafa;
+    --txl-popover: #09090b;
+    --txl-popover-foreground: #fafafa;
+    --txl-primary: #fafafa;
+    --txl-primary-foreground: #18181b;
+    --txl-secondary: #27272a;
+    --txl-secondary-foreground: #fafafa;
+    --txl-muted: #27272a;
+    --txl-muted-foreground: #a1a1aa;
+    --txl-accent: #27272a;
+    --txl-accent-foreground: #fafafa;
+    --txl-destructive: #7f1d1d;
+    --txl-destructive-foreground: #fafafa;
+    --txl-border: #27272a;
+    --txl-input: #27272a;
+    --txl-ring: #d4d4d8;
+    --txl-success: #22c55e;
+    --txl-warning: #f59e0b;
+    --txl-info: #3b82f6;
+
+    --txl-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --txl-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --txl-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --txl-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Forced dark mode class */
+.txl-dark {
+  --txl-background: #09090b;
+  --txl-foreground: #fafafa;
+  --txl-card: #09090b;
+  --txl-card-foreground: #fafafa;
+  --txl-popover: #09090b;
+  --txl-popover-foreground: #fafafa;
+  --txl-primary: #fafafa;
+  --txl-primary-foreground: #18181b;
+  --txl-secondary: #27272a;
+  --txl-secondary-foreground: #fafafa;
+  --txl-muted: #27272a;
+  --txl-muted-foreground: #a1a1aa;
+  --txl-accent: #27272a;
+  --txl-accent-foreground: #fafafa;
+  --txl-destructive: #7f1d1d;
+  --txl-destructive-foreground: #fafafa;
+  --txl-border: #27272a;
+  --txl-input: #27272a;
+  --txl-ring: #d4d4d8;
+  --txl-success: #22c55e;
+  --txl-warning: #f59e0b;
+  --txl-info: #3b82f6;
+
+  --txl-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --txl-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --txl-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --txl-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Forced light mode class */
+.txl-light {
+  --txl-background: #ffffff;
+  --txl-foreground: #09090b;
+  --txl-card: #ffffff;
+  --txl-card-foreground: #09090b;
+  --txl-popover: #ffffff;
+  --txl-popover-foreground: #09090b;
+  --txl-primary: #18181b;
+  --txl-primary-foreground: #fafafa;
+  --txl-secondary: #f4f4f5;
+  --txl-secondary-foreground: #18181b;
+  --txl-muted: #f4f4f5;
+  --txl-muted-foreground: #71717a;
+  --txl-accent: #f4f4f5;
+  --txl-accent-foreground: #18181b;
+  --txl-destructive: #ef4444;
+  --txl-destructive-foreground: #fafafa;
+  --txl-border: #e4e4e7;
+  --txl-input: #e4e4e7;
+  --txl-ring: #18181b;
+  --txl-success: #22c55e;
+  --txl-warning: #f59e0b;
+  --txl-info: #3b82f6;
+
+  --txl-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --txl-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --txl-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --txl-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Animation keyframes */
+@keyframes txl-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes txl-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes txl-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes txl-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes txl-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
