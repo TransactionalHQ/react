@@ -1,18 +1,18 @@
-# transactional-react
+# @usetransactional/react
 
 Official React SDK for [Transactional](https://usetransactional.com) - Auth, Chat, Knowledge Base, and Forms components for React and Next.js applications.
 
-[![npm version](https://badge.fury.io/js/transactional-react.svg)](https://www.npmjs.com/package/transactional-react)
+[![npm version](https://badge.fury.io/js/%40usetransactional%2Freact.svg)](https://www.npmjs.com/package/@usetransactional/react)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
 
 ```bash
-npm install transactional-react
+npm install @usetransactional/react
 # or
-yarn add transactional-react
+yarn add @usetransactional/react
 # or
-pnpm add transactional-react
+pnpm add @usetransactional/react
 ```
 
 ## Features
@@ -32,7 +32,7 @@ pnpm add transactional-react
 Add a support chat widget to your application:
 
 ```tsx
-import { ChatWidget } from 'transactional-react/chat';
+import { ChatWidget } from '@usetransactional/react/chat';
 
 function App() {
   return (
@@ -57,7 +57,7 @@ function App() {
 Embed a searchable knowledge base:
 
 ```tsx
-import { KnowledgeBase } from 'transactional-react/kb';
+import { KnowledgeBase } from '@usetransactional/react/kb';
 
 function HelpPage() {
   return (
@@ -76,7 +76,7 @@ import {
   KBSearch,
   KBArticle,
   KBCollections
-} from 'transactional-react/kb';
+} from '@usetransactional/react/kb';
 
 function CustomHelpCenter() {
   return (
@@ -93,7 +93,7 @@ function CustomHelpCenter() {
 Create embeddable forms:
 
 ```tsx
-import { TransactionalForm } from 'transactional-react/forms';
+import { TransactionalForm } from '@usetransactional/react/forms';
 
 function ContactPage() {
   return (
@@ -210,15 +210,15 @@ Customize the appearance using CSS variables:
 Import the default styles in your app:
 
 ```tsx
-import 'transactional-react/styles.css';
+import '@usetransactional/react/styles.css';
 ```
 
 Or import component-specific styles:
 
 ```tsx
-import 'transactional-react/chat/styles.css';
-import 'transactional-react/kb/styles.css';
-import 'transactional-react/forms/styles.css';
+import '@usetransactional/react/chat/styles.css';
+import '@usetransactional/react/kb/styles.css';
+import '@usetransactional/react/forms/styles.css';
 ```
 
 ## Next.js App Router
@@ -228,7 +228,7 @@ For Next.js 13+ with the App Router, use the client directive:
 ```tsx
 'use client';
 
-import { ChatWidget } from 'transactional-react/chat';
+import { ChatWidget } from '@usetransactional/react/chat';
 
 export function Chat() {
   return <ChatWidget projectId="your_project_id" />;
@@ -247,7 +247,7 @@ import type {
   User,
   Message,
   Article,
-} from 'transactional-react';
+} from '@usetransactional/react';
 ```
 
 ## Requirements
