@@ -1,5 +1,5 @@
 {
-  "name": "transactional-react",
+  "name": "@usetransactional/react",
   "version": "0.1.1",
   "description": "Official React SDK for Transactional - Auth, Chat, Knowledge Base, and Forms components",
   "main": "./dist/index.js",
@@ -69,11 +69,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TransactionalHQ/transactional-react.git"
+    "url": "https://github.com/TransactionalHQ/react.git"
   },
   "homepage": "https://usetransactional.com/docs/react-sdk",
   "bugs": {
-    "url": "https://github.com/TransactionalHQ/transactional-react/issues"
+    "url": "https://github.com/TransactionalHQ/react/issues"
   },
   "publishConfig": {
     "access": "public",
