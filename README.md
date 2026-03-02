@@ -258,7 +258,7 @@ import type {
 
 ## Documentation
 
-Full documentation is available at [usetransactional.com/docs/react-sdk](https://usetransactional.com/docs/react-sdk)
+Full documentation is available at [usetransactional.com/docs/getting-started](https://usetransactional.com/docs/getting-started/quick-start)
 
 ## License
 
